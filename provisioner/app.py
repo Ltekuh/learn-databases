@@ -23,7 +23,7 @@ sql_client_pass = os.environ['SQL_CLIENT_PASS'] if  'SQL_CLIENT_PASS' in os.envi
 sql_client_cmd = os.environ['SQL_CLIENT_CMD'] if  'SQL_CLIENT_CMD' in os.environ.keys() else "/opt/mssql-tools18/bin/sqlcmd"
 random_seed = int(os.environ['RANDOM_SEED']) if  'RANDOM_SEED' in os.environ.keys() else 0
 connstr = f"{sql_client_cmd} -S tcp:{sql_client_host},{sql_client_port} -U {sql_client_user} -P {sql_client_pass} -C "
-odbc_connstr = "DRIVER={ODBC Driver 17 for SQL Server};" + f"SERVER={sql_client_host},{sql_client_port};DATABASE=main;UID={sql_client_user};PWD={sql_client_pass}"
+odbc_connstr = "DRIVER={ODBC Driver 17 for SQL Server};" + f"SERVER={sql_client_host},{sql_client_port};DATABASE=master;UID={sql_client_user};PWD={sql_client_pass}"
 conn = { 'host' : sql_client_host, 'port' : sql_client_port, 'user' : sql_client_user, 'pass' : sql_client_pass }
 
 random.seed(random_seed)

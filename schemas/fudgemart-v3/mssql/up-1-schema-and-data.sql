@@ -22186,6 +22186,6 @@ GO
 IF  EXISTS (SELECT * FROM sys.check_constraints WHERE object_id = OBJECT_ID(N'[dbo].[CK_fm_employee_minimum_wage]') AND parent_object_id = OBJECT_ID(N'[dbo].[fm_employees]'))
 ALTER TABLE [dbo].[fm_employees] CHECK CONSTRAINT [CK_fm_employee_minimum_wage]
 GO
-USE [main]
+USE [master]
 GO
 ALTER DATABASE [fudgemart_v3] SET  READ_WRITE

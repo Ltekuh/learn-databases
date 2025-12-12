@@ -18,7 +18,7 @@ services:
     platform: linux/amd64
     build: app/.
     environment:
-#      - "CONNSTR=DRIVER={ODBC Driver 17 for SQL Server};SERVER=mssql,1433;DATABASE=main;UID=sa;PWD=SU2orange!"
+#      - "CONNSTR=DRIVER={ODBC Driver 17 for SQL Server};SERVER=mssql,1433;DATABASE=master;UID=sa;PWD=SU2orange!"
       - "FLASK_APP=app.py"
       - "FLASK_ENV=development"
       - "SCHEMA_PATH=/app/schemas"

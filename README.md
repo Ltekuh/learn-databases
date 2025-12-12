@@ -47,7 +47,7 @@ The code will download from github to your computer.
 
 If you do not have `git` installed or you do not wish to clone the repository:
 
-1.  Click [https://github.com/mafudge/learn-databases/archive/main.zip](https://github.com/mafudge/learn-databases/archive/main.zip) to download this repository. 
+1.  Click [https://github.com/mafudge/learn-databases/archive/master.zip](https://github.com/mafudge/learn-databases/archive/master.zip) to download this repository. 
 2. After it downloads, unzip the file to a folder where you wish to store the code repository.
 
 # Walkthrough 

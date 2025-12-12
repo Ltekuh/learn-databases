@@ -32,7 +32,7 @@ class DatabaseUpdater():
     def __init__(self, random_seed, connstr, odbc_connstr, schema_base_path, dbname):
         self.__connstr__ = connstr
         self.__dbname__ = dbname
-        self.__odbc_connstr__ = odbc_connstr.replace("main", dbname)
+        self.__odbc_connstr__ = odbc_connstr.replace("master", dbname)
         self.__schema_base_path__ = schema_base_path
         self.__random_seed__ = random_seed
         self.random = random
@@ -203,7 +203,7 @@ if __name__=='__main__':
     random_seed = 0
     print("DatabaseUpdater")
     connstr= "/opt/mssql-tools18/bin/sqlcmd -S tcp:mssql,1433 -U sa -P SU2orange! -C"
-    odbc_connstr = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;DATABASE=main;UID=sa;PWD=SU2orange!"
+    odbc_connstr = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;DATABASE=master;UID=sa;PWD=SU2orange!"
 
     dbu = DatabaseUpdater(random_seed, connstr, odbc_connstr,"./schemas", "payroll")
     assert dbu.get_time_delta("1d") == datetime.timedelta(days=1)

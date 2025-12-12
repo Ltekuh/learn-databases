@@ -1,4 +1,4 @@
-use main
+use master
 GO
 
 create database tinyu;

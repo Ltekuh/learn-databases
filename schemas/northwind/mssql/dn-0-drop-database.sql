@@ -1,4 +1,4 @@
-USE [master]
+USE [main]
 GO
 if exists (select name from sys.databases where name='northwind')
     ALTER DATABASE northwind SET SINGLE_USER WITH ROLLBACK IMMEDIATE

@@ -1,4 +1,4 @@
-use master
+use main
 GO
 create database northwind;
 ALTER DATABASE northwind SET RECOVERY SIMPLE;

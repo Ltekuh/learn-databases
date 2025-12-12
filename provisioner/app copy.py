@@ -5,7 +5,7 @@ import sys
 
 logging.basicConfig(format='%(levelname)s: %(asctime)s => %(message)s', level=logging.INFO, stream=sys.stdout)
 
-_test_ = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=nas.home.michaelfudge.com,11433;DATABASE=master;UID=sa;PWD=wXp55!929ds"
+_test_ = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=nas.home.michaelfudge.com,11433;DATABASE=main;UID=sa;PWD=wXp55!929ds"
 
 if __name__ == '__main__':
 

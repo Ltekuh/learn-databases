@@ -1,6 +1,6 @@
 -- vBay!
 -- A Carlos V. Inspired E-Bay Clone
-use master
+use main
 go
 
 
@@ -24051,7 +24051,7 @@ insert into vb_zip_codes values ('76934','CARLSBAD','TX','31.59','-100.63');
 insert into vb_zip_codes values ('76436','CARLTON','TX','31.9','-98.13');
 insert into vb_zip_codes values ('76831','CASTELL','TX','30.7','-98.5');
 insert into vb_zip_codes values ('79018','CHANNING','TX','35.68','-102.33');
-insert into vb_zip_codes values ('79058','MASTERSON','TX','35.63','-101.96');
+insert into vb_zip_codes values ('79058','mainSON','TX','35.63','-101.96');
 insert into vb_zip_codes values ('76832','CHEROKEE','TX','30.98','-98.7');
 insert into vb_zip_codes values ('76431','CHICO','TX','33.29','-97.79');
 insert into vb_zip_codes values ('79201','CHILDRESS','TX','34.42','-100.24');
